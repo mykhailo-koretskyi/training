@@ -1,4 +1,4 @@
-=beg
+=begin
 print "Enter a first name: "; # The prompt (no new-line)
 $name = <STDIN>; # Read from standard input
 chomp $name; # Remove new-line character
