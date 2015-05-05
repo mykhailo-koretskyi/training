@@ -9,8 +9,11 @@ Try this with various input values:
 (d) Non-alphanumeric character sequences, e.g. * & % $ \
 =cut
 
+use strict;
+use warnings;
+
 print "Enter a text: ";
-$text = <STDIN>;
+my $text = <STDIN>;
 chomp $text;
 
 print "$text\n";

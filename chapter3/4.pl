@@ -7,7 +7,10 @@ ii. Add 'fozzie' to the end of the array
 iii. Print the resulting array, and its length
 =cut
 
-@names = qw(yogi booboo grizzly rupert baloo teddy bungle care);
+use strict;
+use warnings;
+
+my @names = qw(yogi booboo grizzly rupert baloo teddy bungle care);
 
 $names[4] = 'greppy';
 

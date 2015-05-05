@@ -1,5 +1,22 @@
-@numeros = ();
-$numero = '';
+=begin
+
+Write a program that continually prompts the user for a number until the user enters
+'quit'. Collect these numbers in an array, and print:
+· All the numbers in the array
+· How many numbers in the array
+· The sum of all the numbers
+· The average of all the numbers
+· The largest and smallest number
+You should not perform any computations while the program is still prompting for
+numbers.
+
+=cut
+
+use strict;
+use warnings;
+
+my @numeros = ();
+my $numero = '';
 while ($numero ne 'quit') {
 	print "Enter a number or 'quit' to end: ";
 	$numero = <STDIN>;

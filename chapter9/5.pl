@@ -1,3 +1,8 @@
+
+
+use strict;
+use warnings;
+
 my $filename = 'count.txt';
 my ($mutexname, $mutex);
 

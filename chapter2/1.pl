@@ -15,16 +15,19 @@ Can you explain what is printed?
 
 =cut
 
+use strict;
+use warnings;
+
 print "Enter a first name: ";
-$first = <STDIN>;
+my $first = <STDIN>;
 chomp $first;
 
 print "Enter a last name: ";
-$last = <STDIN>;
+my $last = <STDIN>;
 chomp $last;
 
-@array = ($first, $last);
-
+my @array = ($first, $last);
+my %hash;
 print "@array\n";
 
 $hash{first} = $first;

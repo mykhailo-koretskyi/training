@@ -1,4 +1,16 @@
-%machines = (user1 => 'yogi',
+=begin
+
+· Create a hash with several key/value pairs (‘cut and paste’ one from a previous
+exercise if you like).
+· Now create an array from the keys, and another from the values.
+· Print these two arrays with a colon (‘:’) between each value or key (TMTOWTDI).
+
+=cut
+
+use strict;
+use warnings;
+
+my %machines = (user1 => 'yogi',
 	user2 => 'booboo',
 	user3 => 'rupert',
 	user4 => 'teddy',
@@ -16,8 +28,8 @@
 	user16 => 'hair',
 	user17 => 'greppy');
 
-@key = keys %machines;
-@value = values %machines;
+my @key = keys %machines;
+my @value = values %machines;
 
 print "\@key: ", (join ':', @key), "\n";
 print "\@value: ", (join ':', @value), "\n";

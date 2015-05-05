@@ -12,4 +12,7 @@ perl –w echo.pl c:\windows\*
 What happens? Which program is responsible for the handling of wildcards?
 =cut
 
+use strict;
+use warnings;
+
 print "@ARGV";

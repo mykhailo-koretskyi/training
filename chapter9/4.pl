@@ -1,14 +1,33 @@
+=begin
+
+Create a program that asks the user four questions, then saves the replies in a file.
+The questions are:
+(a) Name of the file
+(b) First name
+(c) Last name
+(d) e-mail address
+If you know HTML, you may wish to create it in that format.
+Optional extension:
+An email address can often be constructed using the first and last names, followed by
+@domain, for example: Fred.Bloggs@qa.com. Enhance your code to prompt for the
+domain instead, and construct the email address based on this assumption.
+
+=cut
+
+use strict;
+use warnings;
+
 print "Enter de name of the file:";
-$file = <STDIN>;
+my $file = <STDIN>;
 chomp $file;
 print "Enter your first name:";
-$first = <STDIN>;
+my $first = <STDIN>;
 chomp $first;
 print "Enter your last name:";
-$last = <STDIN>;
+my $last = <STDIN>;
 chomp $last;
 print "Enter your email domain:";
-$domain = <STDIN>;
+my $domain = <STDIN>;
 chomp $domain;
 
 open (FILE, ">", $file);

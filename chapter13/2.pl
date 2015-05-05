@@ -1,5 +1,26 @@
+=begin
 
-%oshash = (
+Given the hash:
+%oshash = ('MVS' => '5.2.1',
+'Windows' => 'NT',
+'OS/2' => 'Merlin',
+'Linux' => '2.2',
+'HP-UX' => '10',
+'Solaris' => '2.5',
+'Mac' => 'Copland');
+Print the following:
+(a) sorted keys
+(b) sorted keys, with their values
+(c) sorted values
+(d) keys, in order of sorted values
+(e) values, in order of sorted keys
+
+=cut
+
+use strict;
+use warnings;
+
+my %oshash = (
 	'MVS' => '5.2.1',
 	'Windows' => 'NT',
 	'OS/2' => 'Merlin',

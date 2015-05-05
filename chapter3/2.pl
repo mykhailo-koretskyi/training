@@ -11,7 +11,10 @@ What happened to the common first names (Robert)? Hint: try swapping them
 around.
 =cut
 
-%hash = (
+use strict;
+use warnings;
+
+my %hash = (
 	John => "Norman",
 	Robert => "Anson",
 	Christopher => "Fowler",
@@ -20,6 +23,7 @@ around.
 	);
 
 print "Enter a fisrt name: ";
-$first = <STDIN>;
+my $first = <STDIN>;
 chomp $first;
-print "Fisrt name $first, and last $hash{$first}\n";
+$first = "\u$first";
+print "First name $first, and last $hash{$first}\n";

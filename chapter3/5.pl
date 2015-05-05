@@ -11,15 +11,18 @@ scalar and the new array.
 involve a slice), then print the result.
 =cut
 
-@names = qw(yogi booboo grizzly rupert baloo teddy bungle care);
+use strict;
+use warnings;
+
+my @names = qw(yogi booboo grizzly rupert baloo teddy bungle care);
 $names[4] = 'greppy';
 $names[@names] = 'fozzie';
 
-($one, $two, $three, $four) = @names[-4, -3, -2, -1];
+my ($one, $two, $three, $four) = @names[-4, -3, -2, -1];
 
 print "$one $two $three $four\n";
 
-($ascalar, @new) = @names[0, 1, 2, 3];
+my ($ascalar, @new) = @names[0, 1, 2, 3];
 
 print "$ascalar @new\n";
 
