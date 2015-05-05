@@ -1,0 +1,5 @@
+Make sure you print an error message and exit if the user forgets to supply a
+filename.
+On Microsoft Windows the character count will be less than that reported by
+Windows Explorer. The reason is that Windows records are terminated by "\r\n", but
+Perl removes the "\r" before
