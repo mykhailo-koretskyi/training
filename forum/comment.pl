@@ -40,7 +40,7 @@ exit 0;
 
 sub mostrar_mensajes {
 	my $base = new Base;
-	my $sth = $base->prepare("SELECT mensajes.id, mensajes.id_topico, mensajes.id_user, users.user_name, mensajes.mensaje, mensajes.activo FROM mensajes INNER JOIN users ON mensajes.id_user = users.id");
+	my $sth = $base->prepare("SELECT mensajes.id, mensajes.id_topico, mensajes.id_user, users.user_name, mensajes.mensaje, mensajes.activo FROM mensajes INNER JOIN users ON mensajes.id_user = users.id WHERE mensajes.id_topico = '$id_topic'");
 	$sth->execute();
 	while (my @row = $sth->fetchrow_array) {
 		my $id = $row[0];
